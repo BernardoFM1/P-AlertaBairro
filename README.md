@@ -8,7 +8,13 @@ O morador relata uma ocorrência em linguagem natural. A inteligência artificia
 
 ## Tecnologias
 
-Next.js 16 (App Router), React 19, TypeScript e Tailwind CSS no front-end e na API. Supabase (PostgreSQL com RLS e Realtime) para os dados. Google Gemini para estruturar as mensagens. WhatsApp Cloud API, Telegram Bot API e um simulador de demonstração como canais de entrada. Leaflet com OpenStreetMap e Nominatim para o mapa, Open-Meteo para o contexto do tempo e Vitest para os testes.
+- Front-end & API: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS
+- Banco de Dados & Realtime: Supabase (PostgreSQL + RLS + CDC Realtime)
+- Motor de Inteligência Artificial: Google Gemini API (gemini-3.1-flash-lite via @google/genai)
+- Canais Conversacionais: WhatsApp Cloud API (Meta), Telegram Bot API e Simulador Demo integrado
+- Testes Unitários: Vitest
+- Mapa & Geocodificação: Leaflet + OpenStreetMap/Nominatim, com cache e fallback para o centróide do bairro
+- Contexto Meteorológico: Open-Meteo, identificado visualmente como previsão externa
 
 ## Privacidade
 
